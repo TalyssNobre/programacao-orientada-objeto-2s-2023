@@ -3,7 +3,7 @@ package atividade1;
 /**
  * verificaNumeroPrimo
  */
-public class verificaNumeroPrimo {
+public class VerificaNumeroPrimo {
 
     public static int verificarNumeroPrimo(Integer n) {
         if (n <= 1) {
@@ -12,6 +12,7 @@ public class verificaNumeroPrimo {
 
         // Verifica divisibilidade do número por todos os inteiros de 2 até a raiz
         // quadrada de n.
+    
         for (int i = 2; i <= Math.sqrt(n); i++) {
             if (n % i == 0) {
                 return 0; // Se n for divisível por algum número, não é primo.
