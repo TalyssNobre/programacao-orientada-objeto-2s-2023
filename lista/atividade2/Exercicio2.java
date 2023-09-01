@@ -11,6 +11,7 @@ public class Exercicio2 {
         int escolha = scanner.nextInt();
         
 
+
         double temperatura;
 
         switch (escolha) {
@@ -18,6 +19,7 @@ public class Exercicio2 {
                 System.out.print("Digita a temperatura em graus Celsius que tu quer ai irmao: ");
                 temperatura = scanner.nextDouble();
                 double fahrenheit = celsiusParaFahrenheit(temperatura);
+                String Celsiusformatado = String.format("%2f",fahrenheit);
                 System.out.println("A temperatura em Fahrenheit é: " + fahrenheit);
                 break;
             case 2:
