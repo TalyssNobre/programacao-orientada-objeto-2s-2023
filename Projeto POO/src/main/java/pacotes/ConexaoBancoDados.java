@@ -45,7 +45,7 @@ public static void cadastrarUsuario(Usuario usuario) throws SQLException {
     }
 
         pstmt.executeUpdate();
-        System.out.println("Usuário cadastrado com sucesso!");
+        System.out.println("Usuario cadastrado com sucesso!");
     } catch (SQLException e) {
         System.out.println("Erro ao executar o comando SQL: " + e.getMessage());
     }
@@ -56,7 +56,7 @@ public static void cadastrarUsuario(Usuario usuario) throws SQLException {
         if (usuario instanceof Programador || usuario instanceof Professor || usuario instanceof Desempregado) {
             return "INSERT INTO usuarios (nome, email, cargo, salario, carga_horaria) VALUES (?, ?, ?, ?, ?)";
         } else {
-            throw new IllegalArgumentException("Tipo de usuário desconhecido.");
+            throw new IllegalArgumentException("Tipo de usuario desconhecido.");
         }
     }
 }
